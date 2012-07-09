@@ -24,6 +24,7 @@ namespace Dichotomy.Configuration
             CommandlineFlags = new Dictionary<string, Flag>(StringComparer.InvariantCultureIgnoreCase);
 
             CommandlineConvention = commandlineConvention;
+            Flag.Convention = CommandlineConvention;
 
             AddCommandlineFlag(new Flag[]
             {

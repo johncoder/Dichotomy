@@ -8,7 +8,7 @@ namespace Dichotomy.Flags
         {
             Name = "install";
             Description = "Installs as a Windows Service and starts immediately.";
-            Action = () => Elevation.AdminRequired(ServiceManager.InstallAndStart, Name);
+            Action = () => Elevation.AdminRequired(ServiceManager.InstallAndStart, string.Concat(Convention, Name));
         }
     }
 
@@ -18,7 +18,7 @@ namespace Dichotomy.Flags
         {
             Name = "uninstall";
             Description = "Stops the Windows Service, and uninstalls it.";
-            Action = () => Elevation.AdminRequired(ServiceManager.EnsureStoppedAndUninstall, Name);
+            Action = () => Elevation.AdminRequired(ServiceManager.EnsureStoppedAndUninstall, string.Concat(Convention, Name));
         }
     }
 
@@ -28,7 +28,7 @@ namespace Dichotomy.Flags
         {
             Name = "start";
             Description = "Starts the Windows Service.";
-            Action = () => Elevation.AdminRequired(ServiceManager.StartService, Name);
+            Action = () => Elevation.AdminRequired(ServiceManager.StartService, string.Concat(Convention, Name));
         }
     }
 
@@ -38,7 +38,7 @@ namespace Dichotomy.Flags
         {
             Name = "stop";
             Description = "Stops the Windows Service.";
-            Action = () => Elevation.AdminRequired(ServiceManager.StopService, Name);
+            Action = () => Elevation.AdminRequired(ServiceManager.StopService, string.Concat(Convention, Name));
         }
     }
 
@@ -48,7 +48,7 @@ namespace Dichotomy.Flags
         {
             Name = "restart";
             Description = "Restarts the Windows Service.";
-            Action = () => Elevation.AdminRequired(ServiceManager.RestartService, Name);
+            Action = () => Elevation.AdminRequired(ServiceManager.RestartService, string.Concat(Convention, Name));
         }
     }
 }

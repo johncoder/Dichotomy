@@ -7,7 +7,7 @@ Some of the benefits of this library:
 
 - Very simple to use
 - Easy to customize
-- Installer automatically elevates permissions (no more instalutil or admin command prompts!)
+- Installer automatically elevates permissions (no more installutil or admin command prompts!)
 - Makes your application more versatile
 
 The NuGet package can be found [here](https://nuget.org/packages/Dichotomy).
@@ -23,7 +23,7 @@ You can mix Dichotomy with lots of exciting projects, like:
 
 ###What does this package do to my project?
 
-When you install the NuGet package, you will notice that a new file has been added to your project named `ConsoleApplicaitonInstaller.cs`. This file contains an installer class used to interact with the install functionality:
+When you install the NuGet package, you will notice that a new file has been added to your project named `ConsoleApplicationInstaller.cs`. This file contains an installer class used to interact with the install functionality:
 
 	[RunInstaller(true)]
     public class ConsoleApplicationInstaller : CustomInstaller
