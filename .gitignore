@@ -1,6 +1,10 @@
 # Build Folders (you can keep bin if you'd like, to store dlls and pdbs)
 bin
 obj
+*.ReSharper.user
+*_ReSharper.*
+*.suo
+*.csproj.user
 
 # mstest test results
 TestResults
