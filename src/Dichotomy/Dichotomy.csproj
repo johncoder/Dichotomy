@@ -48,6 +48,9 @@
     <Compile Include="Helpers\ServiceInstaller.cs">
       <SubType>Component</SubType>
     </Compile>
+    <None Include="nuget\Content\ConsoleApplicationInstaller.cs.pp">
+      <SubType>Component</SubType>
+    </None>
     <Compile Include="Runner.cs" />
     <Compile Include="Configuration\ConfigurationOptions.cs" />
     <Compile Include="Flags\Flag.cs" />
@@ -61,6 +64,9 @@
     <Compile Include="Tasks\CtrlCFixStartupTask.cs" />
     <Compile Include="Tasks\GenericStartupTask.cs" />
     <Compile Include="Tasks\IStartupTask.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nuget\Dichotomy.nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
