@@ -1,9 +1,25 @@
 Dichotomy
 =========
 
-This is a super lightweight .NET library that allows a console application to be installed and ran as a Windows Service. This starting version has a minimalistic feature set, with only a few short steps for getting started.
+This is a super lightweight .NET library that allows a console application to be installed and ran as a Windows Service. This starting version has a minimalistic feature set, with only a few short steps for getting started. Inspiration for usability taken from [RavenDB](https://github.com/ravendb/ravendb)'s server command line user experience.
 
-The nuget package can be found [here](https://nuget.org/packages/Dichotomy).
+Some of the benefits of this library:
+
+- Very simple to use
+- Easy to customize
+- Installer automatically elevates permissions (no more instalutil or admin command prompts!)
+- Makes your application more versatile
+
+The NuGet package can be found [here](https://nuget.org/packages/Dichotomy).
+
+####Recipe Ideas
+
+You can mix Dichotomy with lots of exciting projects, like:
+
+- NancyFx
+- ASP.NET Web API (self host)
+- WCF Services
+- Much more!
 
 ###What does this package do to my project?
 
