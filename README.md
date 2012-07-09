@@ -3,7 +3,7 @@ Dichotomy
 
 This is a super lightweight .NET library that allows a console application to be installed and ran as a Windows Service. This starting version has a minimalistic feature set, with only a few short steps for getting started.
 
-The nuget package can be found [here](http://nuget.org/dichotomy).
+The nuget package can be found [here](https://nuget.org/packages/Dichotomy).
 
 ###What does this package do to my project?
 

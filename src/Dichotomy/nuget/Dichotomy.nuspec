@@ -5,11 +5,12 @@
     <version>1.0.0</version>
     <authors>johncoder</authors>
     <owners>John Nelson</owners>
+    <projectUrl>https://github.com/johncoder/Dichotomy</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A super lightweight library to help you convert a console application into a Windows service.</description>
     <releaseNotes></releaseNotes>
     <copyright>Copyright 2012</copyright>
-    <tags>Windows-Service Console-Applicaiton Library</tags>
+    <tags>Windows-Service Console</tags>
     <frameworkAssemblies>
       <frameworkAssembly assemblyName="System.Configuration.Install" targetFramework="net40" />
     </frameworkAssemblies>
