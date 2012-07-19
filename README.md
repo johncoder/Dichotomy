@@ -94,3 +94,7 @@ If you want to let Dichotomy give you a hand with some basic command line argume
     });
     var runner = new Runner(new Service(), config);
     runner.Run();
+
+To change the name of your service, call the `Initialize` method on the `ServiceManager` class.
+
+    Dichotomy.Helpers.ServiceManager.Initialize("MyService", "My Service", "This is my special service that doesn't do much of anything!");
