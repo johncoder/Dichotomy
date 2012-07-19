@@ -15,9 +15,9 @@ namespace Dichotomy.Helpers
 
             _serviceInstaller = new ServiceInstaller
                 {
-                    DisplayName = ServiceManager.Name,
+                    DisplayName = ServiceManager.DisplayName,
                     ServiceName = ServiceManager.Name,
-
+                    Description = ServiceManager.Description
                 };
 
             _serviceProcessInstaller.Password = null;

@@ -8,7 +8,7 @@ using System.ServiceProcess;
 
 namespace Dichotomy.Helpers
 {
-    internal static class ServiceManager
+    public static class ServiceManager
     {
         private static bool _initialized;
         private static string _name;
@@ -22,7 +22,11 @@ namespace Dichotomy.Helpers
             }
         }
 
-        public static void Initialize(string name)
+        public static string Description { get; private set; }
+
+        public static string DisplayName { get; private set; }
+
+        public static void Initialize(string name, string displayName = "", string description = "")
         {
             if (string.IsNullOrEmpty(name))
             {
@@ -30,6 +34,8 @@ namespace Dichotomy.Helpers
             }
 
             _name = name;
+            DisplayName = displayName;
+            Description = description;
             _initialized = true;
         }
 
@@ -73,7 +79,6 @@ namespace Dichotomy.Helpers
                 stopController.WaitForStatus(ServiceControllerStatus.Stopped);
             }
         }
-
 
         public static void StartService()
         {
